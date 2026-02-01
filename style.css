@@ -1,0 +1,246 @@
+/*
+ * Security Scanner - Custom Stylesheet
+ * 
+ * Professional styling for security assessment interface.
+ * Emphasizes clarity, security awareness, and user experience.
+ */
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Header Styles */
+h1.display-4 {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lead {
+    color: #f8f9fa !important;
+    font-weight: 300;
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-primary:hover {
+    background-color: #5568d3;
+    border-color: #5568d3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-secondary {
+    transition: all 0.2s;
+}
+
+.btn-outline-secondary:hover {
+    transform: translateY(-1px);
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Severity-based Alert Styling */
+.alert-danger .alert-heading {
+    color: #721c24;
+    border-bottom: 2px solid #f5c6cb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.alert-warning .alert-heading {
+    color: #856404;
+    border-bottom: 2px solid #ffeeba;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.alert-info .alert-heading {
+    color: #0c5460;
+    border-bottom: 2px solid #bee5eb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Badge Styles */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Progress Section */
+#progressSection {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+#progressSection .spinner-border {
+    width: 2rem;
+    height: 2rem;
+    border-width: 0.3em;
+}
+
+/* Results Section Animations */
+#resultsSection {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Accessibility Improvements */
+.form-control:focus,
+.btn:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Code/Banner Display */
+small.text-muted {
+    font-family: 'Courier New', monospace;
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* Severity Icons Consistency */
+.alert-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Professional Footer Spacing */
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading State */
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Enhanced Shadow for Important Elements */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}

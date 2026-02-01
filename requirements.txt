@@ -1,0 +1,13 @@
+# Security Scanner - Python Dependencies
+#
+# Production-ready dependencies for passive security scanning tool.
+# All dependencies are minimal and security-focused.
+
+# Web Framework
+Flask==2.3.3
+
+# WSGI Server (recommended for production)
+# gunicorn==21.2.0  # Uncomment for production deployment
+
+# Development only
+# pytest==7.4.2  # Uncomment for testing
